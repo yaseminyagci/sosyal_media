@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kadirhan.fragmenttablayout.Register">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Ad"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="18dp"
+        android:text="Mail" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarih"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView2"
+         />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="parola"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView3"
+         />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cinsiyet"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView4"
+         />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="resim"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView5"
+        />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="18dp" />
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/ad"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="53dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView5" />
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/mail"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/ad" />
+   <TextView
+       android:layout_width="100dp"
+       android:layout_height="25dp"
+       android:id="@+id/tarih_txt"
+       android:text="tarih"
+       android:layout_alignBaseline="@+id/textView3"
+       android:layout_alignBottom="@+id/textView3"
+       android:layout_alignStart="@+id/mail" />
+    <DatePicker
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/tarih"
+        android:layout_marginLeft="24dp"
+        android:layout_alignTop="@+id/tarih_txt"
+        android:layout_toEndOf="@+id/btnDate"
+        ></DatePicker>
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/parola"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/tarih_txt" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/cinsiyet"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/parola" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/resim"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/cinsiyet" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/url"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/resim" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tarih"
+        android:textSize="12dp"
+        android:id="@+id/buton2"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/tarih" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydol"
+        android:id="@+id/btnDate"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/url"
+        android:layout_alignEnd="@+id/url" />
+
+</RelativeLayout>

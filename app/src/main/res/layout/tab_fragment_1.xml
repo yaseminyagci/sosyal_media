@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/webBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_style"
+            android:onClick="profilGoster"
+           android:layout_marginTop="130dp"
+            android:text="GitHub Profili" />
+
+        <TextView
+            android:text="İsim Soyisim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTvHome"
+            android:layout_toRightOf="@+id/profilImg"
+            android:textSize="40sp"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:text="01.01.2001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tarihTvHome"
+            android:layout_toRightOf="@+id/profilImg"
+            android:layout_below="@+id/nameTvHome"
+            android:textSize="40sp"
+            android:paddingLeft="16dp"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/user"
+            android:id="@+id/profilImg"
+            android:layout_alignParentTop="true"
+           />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:text="Arama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aramaBtn"
+            android:onClick="arama"
+            android:background="@drawable/custom_button_style"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Profil Düzenle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duzenleBtn"
+            android:background="@drawable/custom_button_style"
+            android:onClick="duzenle"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Arkadaşlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="#0000AA"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <ListView
+        android:id="@+id/arkadasList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
